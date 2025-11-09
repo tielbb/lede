@@ -1,0 +1,8 @@
+name: Debug with tmate
+on: [push]
+jobs:
+ debug:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Setup tmate session
+       uses: mxschmitt/action-tmate@v3
